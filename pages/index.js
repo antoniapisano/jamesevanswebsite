@@ -10,8 +10,6 @@ export default function Home() {
       </Head>
       <h1 className={styles.thistitle}>James Evans</h1>
       <YoutubeEmbed embedId="rokGy0huYEA" />
-
-      
     </div>
   )
 }

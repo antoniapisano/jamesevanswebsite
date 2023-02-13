@@ -1,0 +1,15 @@
+.thistitle {
+    font-size: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin: none;
+    font-weight: lighter;
+    left: 30vh;
+    right: 30vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

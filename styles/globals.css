@@ -1,14 +1,15 @@
-
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
+Component {
+  display: grid;
+}
 h1 {
   padding: none;
   margin: none;
@@ -75,6 +76,13 @@ h1 {
   height: 2.5rem;  
   background-color: black;
   color: white;          
+}
+
+.video-responsive {
+  height: 30vh;
+  width: 50vh;
+  left: 30vh;
+  right: 30vh;
 }
 
 @media (max-width: 700px) {
