@@ -4,8 +4,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
+      <span className="logo">James Evans</span>
       <div className={`nav-items ${isOpen && "open"}`}>
         <ul>
+        
           <li>
         <a href="https://www.youtube.com/@jamesevansmusic231">Youtube</a>
         </li>
