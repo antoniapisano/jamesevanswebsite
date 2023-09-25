@@ -9,11 +9,10 @@ export default function Home() {
       <Head>
         <title>James Evans Official Website UK Blues Artist</title>
       </Head>
-
-   
       <div className={styles.youtubecontainer}>
         <YoutubeEmbed embedId="wp58tHwugI8" />
           </div>
+            
 
     
     

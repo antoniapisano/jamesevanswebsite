@@ -40,16 +40,21 @@ h1 {
   padding-top: none; 
 }
 
+.navbarImage {
+  z-index: 0;
+  opacity: 50%;
+}
+
 .Navbar {
   height: 100px;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
-  background: yellow;
 }
 
 .Navbar li {
+  z-index: 1;
   font-size: 1.5em;
   list-style-type: none;
   display: inline-block;
@@ -60,6 +65,7 @@ h1 {
 }
 
 .Navbar li a {
+  z-index: 1;
   color: darkslateblue;
   font-style: normal;
   text-decoration: none;
@@ -173,6 +179,8 @@ svg {
     padding: 0 0.5em;
     position: relative;
     }
+
+
 
 }
 

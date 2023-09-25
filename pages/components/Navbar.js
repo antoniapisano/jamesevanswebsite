@@ -1,9 +1,17 @@
 import React, {useState} from "react";
+import Image from 'next/image'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
+      <Image
+      className="navbarImage"
+      src="/venezuelan-cuatro.webp"
+      alt="venezuelan-cuatro"
+      fill
+      style={{objectFit:"cover"}}
+    />
       <span className="logo">James Evans</span>
       <div className={`nav-items ${isOpen && "open"}`}>
         <ul>
