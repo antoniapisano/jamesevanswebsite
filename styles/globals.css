@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
-  background-color: lightgrey;
+  background-color: black;
 }
 
 h1 {
@@ -40,10 +40,6 @@ h1 {
   padding-top: none; 
 }
 
-.navbarImage {
-  z-index: 0;
-  opacity: 50%;
-}
 
 .Navbar {
   height: 100px;
@@ -51,6 +47,7 @@ h1 {
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 
 .Navbar li {
@@ -65,21 +62,20 @@ h1 {
 }
 
 .Navbar li a {
-  z-index: 1;
-  color: darkslateblue;
+  color: white;
   font-style: normal;
   text-decoration: none;
   transition: color 500ms;
 }
 
 .Navbar li > a:hover {
-  color: cyan;
+  color: blue;
 }
 
 .Navbar > .logo {
-  font-size: 4em;
+  font-size: 4.5em;
   margin: 15px;
-  color: black;
+  color: white;
 }
 
 
@@ -89,7 +85,7 @@ h1 {
   justify-content: space-between;
   position: absolute;
   float: none;
-  color: cyan;
+  color: blue;
   text-decoration: none;
   margin: 15px;
   position: relative;
@@ -109,7 +105,7 @@ h1 {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: cyan;
+  background: blue;
   transition: all 0.45s;
 }
 
@@ -132,8 +128,8 @@ h1 {
   bottom: 0;
   width: 100%;
   height: 2.5rem;  
-  background-color: darkslateblue;
-  color: lightgrey; 
+  background-color: black;
+  color: white; 
   font-size: 0.5vh;   
   list-style-type: none;   
 }
@@ -146,11 +142,11 @@ text-align: center;
 display: inline-flex;
 padding: 0 20px;
 position: relative;
-color: lightgrey;
+color: white;
 }
 
 svg {
-  fill: lightgrey;
+  fill: white;
   display: inline-flex;
   align-self: center;
 }
@@ -165,8 +161,8 @@ svg {
     bottom: 0;
     width: 100%;
     height: 2.5rem;  
-    background-color: darkslateblue;
-    color: lightgrey; 
+    background-color: black;
+    color: white; 
     font-size: 0.5em;      
   }
 
@@ -216,7 +212,7 @@ svg {
     top: 60px;
     display: block;
     flex-direction: column;
-    background: lightgrey;
+    background: white;
     align-items: left;
     left: 0;
     width: 66%;
@@ -248,7 +244,7 @@ svg {
     position: relative;
     width: 32px;
     height: 2px;
-    background: darkslateblue;
+    background: black;
     transition: all 0.45s ease-in-out;
   }
 
@@ -257,7 +253,7 @@ svg {
     content: "";
     position: absolute;
     height: 2px;
-    background:darkslateblue;
+    background:black;
     border-radius: 2px;
     transition: all 0.45s ease-in-out;
   }
@@ -297,8 +293,8 @@ svg {
     bottom: 0;
     width: 100%;
     height: 2.5rem;  
-    background-color: darkslateblue;
-    color: lightgrey; 
+    background-color: black;
+    color: white; 
     font-size: 2vh;    
     margin: auto 0;
 
@@ -352,7 +348,7 @@ svg {
     top: 60px;
     display: block;
     flex-direction: column;
-    background: lightgrey;
+    background: white;
     align-items: left;
     left: 0;
     width: 100%;
