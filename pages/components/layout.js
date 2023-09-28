@@ -5,13 +5,13 @@ import Navbar from "./Navbar";
 const Layout = ({ children }) => {
   return (
     <div className="page-container" >
-    <div className="backgroundimage">
+      <div className="backgroundimage">
       <Image 
-        src="/Guitarbackground2.webp"
-        alt="DekoArt-Gallery https://pixabay.com/illustrations/guitar-instrument-music-1940733/"
+        src="/neutralguitar.webp"
+        alt="efes https://pixabay.com/illustrations/art-collage-layout-multicoloured-2340061/"
         fill
         style={{objectFit:"cover"}}
-      />
+      />  
     </div>
    <div className="content-wrap">
       <Navbar />
