@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import YoutubeEmbed from './YoutubeEmbed'
+import { Oswald } from '@next/font/google'
 
 export default function Home() {
   return (
