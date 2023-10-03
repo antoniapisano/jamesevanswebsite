@@ -19,10 +19,12 @@
 }
 
 
-/* @media (max-width: 1020) {
+
+
+@media (max-width: 1020) {
 
   .youtubecontainer {
-    padding-top: 0%;
+    padding-top: auto;
     aspect-ratio: auto;
     display: flex;
     padding-bottom: 10%;
@@ -41,10 +43,10 @@
   
 
 }
-*/
 
 
-@media (max-width: 819px) {
+
+@media (max-width: 913px) {
 
   .brtitle {
     display: none;
@@ -66,10 +68,12 @@
   .headcontainer {
     grid-area: a;
     align-items: center;
+    padding-bottom: -20%;
   }
 
   .youtubecontainer {
-    display: flex;
+  display: flex;
+  padding-top: -20%;
   padding-bottom: 10%;
   width: 100%;
   height: 100%;
@@ -84,6 +88,7 @@
   width: 100%;
   height: 100%;
   padding: 0%;
+  padding-top: -20%;
   
 }
 
@@ -99,7 +104,7 @@
   text-align: center;
   position: relative;
   display: flex;
-  color: dodgerblue;
+  color: black;
   font-weight: lighter;
   display: block;
   margin-left: auto;
@@ -119,7 +124,7 @@
     font-size: 10em;
     position: relative;
     display: flex;
-    color: dodgerblue;
+    color: black;
     font-weight: lighter;
     display: block;
     margin-left: auto;
@@ -138,7 +143,7 @@
     font-size: 6em;
     position: relative;
     display: flex;
-    color: dodgerblue;
+    color: black;
     font-weight: lighter;
     display: block;
     margin-left: auto;

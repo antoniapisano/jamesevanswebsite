@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
-  background-color: red;
+  background-color: dodgerblue;
 }
 
 h1 {
@@ -24,12 +24,12 @@ h1 {
   width: 100%;
   height: 100%;
   opacity: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
 } 
 
 .page-container {
   position: relative;
-  padding-left: 10px;
-  margin-left: -10px;
   height: 100vh;
   overflow: hidden;
 
@@ -69,7 +69,7 @@ h1 {
 }
 
 .Navbar li > a:hover {
-  color: blue;
+  color: darkgoldenrod;
 }
 
 .Navbar > .logo {
@@ -160,7 +160,7 @@ svg {
     bottom: 0;
     width: 100%;
     height: 2.5rem;  
-    background-color: dodgerblue;
+    background-color: black;
     color: lightgrey; 
     font-size: 0.5em;      
   }
@@ -177,7 +177,7 @@ svg {
 
 }
 
-@media (max-width: 819px) {
+@media (max-width: 1020px) {
 
   .logo {
     display: none;
@@ -291,7 +291,7 @@ svg {
       bottom: 0;
       width: 100%;
       height: 2.5rem;  
-      background-color: dodgerblue;
+      background-color: black;
       color: lightgrey; 
       font-size: 2vh;    
       margin: auto 0;
