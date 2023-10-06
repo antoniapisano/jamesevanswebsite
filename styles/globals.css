@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
-  background-color: red;
+  background-color: dodgerblue;
 }
 
 h1 {
@@ -24,12 +24,12 @@ h1 {
   width: 100%;
   height: 100%;
   opacity: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
 } 
 
 .page-container {
   position: relative;
-  padding-left: 10px;
-  margin-left: -10px;
   height: 100vh;
   overflow: hidden;
 
@@ -69,7 +69,7 @@ h1 {
 }
 
 .Navbar li > a:hover {
-  color: blue;
+  color: darkgoldenrod;
 }
 
 .Navbar > .logo {
@@ -123,7 +123,7 @@ h1 {
 
 
 .Footer {
-  position: absolute;
+  position: fixed;
   display: flex;
   bottom: 0;
   width: 100%;
@@ -151,8 +151,7 @@ svg {
   align-self: center;
 }
 
-
-@media (max-width: 1020px) {
+@media (max-width: 1281px) {
 
 
   .Footer {
@@ -162,7 +161,7 @@ svg {
     width: 100%;
     height: 2.5rem;  
     background-color: black;
-    color: white; 
+    color: lightgrey; 
     font-size: 0.5em;      
   }
 
@@ -176,216 +175,195 @@ svg {
     position: relative;
     }
 
-
-
 }
 
+@media (max-width: 1020px) {
 
-@media (max-width: 819px) {
+  .logo {
+    display: none;
+  }
 
-
-
-  
-  /* .page-container {
-    margin: none;
-    padding-top: none; 
-    overflow-y: scroll;
-  } */
 
   .page-container {
-    position: relative;
-    padding-left: 10px;
-    margin-left: -10px;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 10px;
-    overflow: hidden;
+    overflow: auto;
+  }
+    
+   
   
-  }
-
-  .Navbar {
-    display: block;
-    flex-direction: column;
-  }
-
-  .Navbar li {
-    font-size: 4.5em;
-    list-style-type: none;
-    display: block;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .Navbar > .nav-items {
-    position: absolute;
-    z-index: 10;
-    top: 60px;
-    display: block;
-    flex-direction: column;
-    background: white;
-    align-items: left;
-    left: 0;
-    width: 66%;
-    height: 66%;
-    transform: translateX(-100%);
-    transition: all .45s;
-  }
-
-  .Navbar > .nav-items > a::before {
-      background: transparent;
-  }
-
-  .Navbar > .nav-items.open {
-      transform: translateX(0);
-  }
-
-  .Navbar > .nav-toggle {
-    display: flex;
-    margin-right: auto;
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-
-  .nav-toggle > .bar {
-    position: relative;
-    width: 32px;
-    height: 2px;
-    background: black;
-    transition: all 0.45s ease-in-out;
-  }
-
-  .nav-toggle > .bar::before,
-  .nav-toggle > .bar::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background:black;
-    border-radius: 2px;
-    transition: all 0.45s ease-in-out;
-  }
-
-  .nav-toggle > .bar::before {
-    width: 25px;
-    transform: translateY(-8px);
-    right: 0;
-  }
-
-  .nav-toggle > .bar::after {
-    width: 32px;
-    transform: translateY(8px);
-  }
-
-  .nav-toggle.open > .bar {
-      transform: translateX(-40px);
-      background: transparent;
-  }
-
-  .nav-toggle.open > .bar::before {
-      width: 32px;
-      transform: rotate(45deg) translate(26px, -26px);
-  }
-
-  .nav-toggle.open > .bar::after {
-    transform: rotate(-45deg) translate(26px, 26px);
-  }
-
-  
-
-
-  .Footer {
-    position: fixed;
-    text-align: center;
-    display: flex;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;  
-    background-color: black;
-    color: white; 
-    font-size: 2vh;    
-    margin: auto 0;
-
-  }
-
-  .Footer li {
-    position: relative;
-    display: flex;
-    font-size: 0.5em;
-    list-style-type: none;
-    justify-content: space-between;
-    text-align: center;
-    display: inline-flex;
-    padding: 0 1em;
+    .Navbar {
+      display: block;
+      flex-direction: column;
     }
-
-
-
-  /*  .backgroundimage {
+  
+    .Navbar li {
+      font-size: 3em;
+      list-style-type: none;
+      display: block;
+      flex-direction: column;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    .Navbar > .nav-items {
+      position: absolute;
+      z-index: 10;
+      top: 60px;
+      display: block;
+      flex-direction: column;
+      background: darkgoldenrod;
+      align-items: left;
+      left: 0;
+      width: 66%;
+      height: 66%;
+      transform: translateX(-100%);
+      transition: all .45s;
+    }
+  
+    .Navbar > .nav-items > a::before {
+        background: transparent;
+    }
+  
+    .Navbar > .nav-items.open {
+        transform: translateX(0);
+    }
+  
+    .Navbar > .nav-toggle {
+      display: flex;
+      margin-right: auto;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+  
+    .nav-toggle > .bar {
+      position: relative;
+      width: 32px;
+      height: 2px;
+      background: dodgerblue;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background:dodgerblue;
+      border-radius: 2px;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before {
+      width: 25px;
+      transform: translateY(-8px);
+      right: 0;
+    }
+  
+    .nav-toggle > .bar::after {
+      width: 32px;
+      transform: translateY(8px);
+    }
+  
+    .nav-toggle.open > .bar {
+        transform: translateX(-40px);
+        background: transparent;
+    }
+  
+    .nav-toggle.open > .bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+  
+    .nav-toggle.open > .bar::after {
+      transform: rotate(-45deg) translate(26px, 26px);
+    }
+  
+    
+  
+  
+    .Footer {
+      position: fixed;
+      text-align: center;
+      display: flex;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;  
+      background-color: black;
+      color: lightgrey; 
+      font-size: 2vh;    
+      margin: auto 0;
+  
+    }
+  
+    .Footer li {
+      position: relative;
+      display: flex;
+      font-size: 0.33em;
+      list-style-type: none;
+      justify-content: space-between;
+      text-align: center;
+      display: inline-flex;
+      padding: 0 1em;
+      }
+  
+  
+  }
+  
+  @media (max-width: 550px) {
+  
+  
+    .Navbar li {
+      font-size:2em;
+      text-align: center;
+      list-style-type: none;
+      display: block;
+      flex-direction: column;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    .Navbar ul {
+      text-align: center;
+      margin: 0%;
+      padding: 0%;
+    }
+  
+    .Navbar > .nav-items {
+      position: absolute;
+      z-index: 10;
+      top: 60px;
+      display: block;
+      flex-direction: column;
+      background: darkgoldenrod;
+      align-items: left;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      transform: translateX(-100%);
+      transition: all .45s;
+    }
+  }
+  
+  
+  @media (max-height: 450px) {
+  
+  
+  
+    
+    .page-container {
+      margin: none;
+      padding-top: none; 
+      overflow-y: scroll;
+    }
+  
+    .backgroundimage {
       background-size: cover;
       width: 100%;
       display: block;
       position: fixed;
       overflow: visible;
-    } */
-
-}
-
-@media (max-width: 550px) {
-
-
-  .Navbar li {
-    font-size:3em;
-    text-align: center;
-    list-style-type: none;
-    display: block;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    }
   }
-
-  .Navbar ul {
-    text-align: center;
-    margin: 0%;
-    padding: 0%;
-  }
-
-  .Navbar > .nav-items {
-    position: absolute;
-    z-index: 10;
-    top: 60px;
-    display: block;
-    flex-direction: column;
-    background: white;
-    align-items: left;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    transform: translateX(-100%);
-    transition: all .45s;
-  }
-}
-
-/*
-@media (max-height: 450px) {
-
-
-
-  
-  .page-container {
-    margin: none;
-    padding-top: none; 
-    overflow-y: scroll;
-  }
-
-  .backgroundimage {
-    background-size: cover;
-    width: 100%;
-    display: block;
-    position: fixed;
-    overflow: visible;
-  }
-} */
